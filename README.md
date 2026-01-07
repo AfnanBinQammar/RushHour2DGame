@@ -14,15 +14,15 @@ In **Rush Hour 2D**, you navigate a bustling 25x20 grid-based city. You must rac
 
 ### 🌟 Key Features
 * **🔄 Dual Game Modes:**
-    * [cite_start]**Taxi Mode:** Drive a yellow cab and transport passengers[cite: 1].
-    * [cite_start]**Pickup Mode:** Drive a red truck and transport cargo boxes[cite: 1].
-    * [cite_start]*Dynamic Switching:* Visit the Garage to switch roles mid-game using the **'S'** key[cite: 1].
-* [cite_start]**🚦 Smart Traffic System:** Computer-controlled cars navigate the grid randomly, requiring the player to avoid collisions to save points[cite: 1].
+    * **Taxi Mode:** Drive a yellow cab and transport passengers[cite: 1].
+    * **Pickup Mode:** Drive a red truck and transport cargo boxes[cite: 1].
+    * *Dynamic Switching:* Visit the Garage to switch roles mid-game using the **'S'** key[cite: 1].
+* **🚦 Smart Traffic System:** Computer-controlled cars navigate the grid randomly, requiring the player to avoid collisions to save points[cite: 1].
 * **⛽ Economy & Resources:**
     * **Fuel System:** Fuel depletes as you move. [cite_start]Refill at gas stations (Red zones)[cite: 1].
-    * [cite_start]**Money System:** Earn cash by completing drops; spend cash to buy fuel[cite: 1].
-* [cite_start]**🏙️ Interactive Map:** Features destructible elements, buildings, trees, and a functional garage[cite: 1].
-* [cite_start]**⏱️ Timer:** Complete as many objectives as possible before the 180-second timer runs out[cite: 1].
+    * **Money System:** Earn cash by completing drops; spend cash to buy fuel[cite: 1].
+* **🏙️ Interactive Map:** Features destructible elements, buildings, trees, and a functional garage[cite: 1].
+* **⏱️ Timer:** Complete as many objectives as possible before the 180-second timer runs out[cite: 1].
 
 ---
 
@@ -40,14 +40,14 @@ In **Rush Hour 2D**, you navigate a bustling 25x20 grid-based city. You must rac
 
 ## 🏗️ Object-Oriented Design
 
-[cite_start]This project utilizes a structured class hierarchy to manage game state[cite: 1]:
+This project utilizes a structured class hierarchy to manage game state[cite: 1]:
 
 * **Inheritance:**
     * `class Game`: The parent class for most entities.
     * `class Board`, `class Menu`, `class Score`, `class Fuel`: All inherit from `Game` to share common attributes.
     * `class mainCar`: Inherits properties to interact with the grid.
-* [cite_start]**Encapsulation:** Private data members (like `grid[][]`, `score`, `fuelbar`) are protected and accessed via public getter/setter methods[cite: 1].
-* [cite_start]**Composition:** The `Garage` and `Dropoffs` classes hold pointers to the `Board`, allowing complex interactions between different game components[cite: 1].
+* **Encapsulation:** Private data members (like `grid[][]`, `score`, `fuelbar`) are protected and accessed via public getter/setter methods[cite: 1].
+* **Composition:** The `Garage` and `Dropoffs` classes hold pointers to the `Board`, allowing complex interactions between different game components[cite: 1].
 
 ---
 
